@@ -518,6 +518,11 @@ const CONTATOS = [
         emails: ["supervisao.pa-1@fgservices.com.br"],
         phone: "81992705873",
       },
+      {
+        name: "Rafael Silva",
+        emails: ["supervisao.pa-3@fgservices.com.br"],
+        phone: "81995369534",
+      },
     ],
   },
   {
