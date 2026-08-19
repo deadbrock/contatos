@@ -311,7 +311,7 @@ const CONTATOS = [
       {
         name: "Allyson",
         emails: ["coordenacao.pe-2@fgservicess.com.br"],
-        phone: "81983736689",
+        phone: "81983136689",
       },
       {
         name: "Thamiris",
