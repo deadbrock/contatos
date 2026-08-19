@@ -140,12 +140,14 @@ const CONTATOS = [
       {
         name: "Sem usuário",
         emails: ["dp@fgservices.com.br"],
-        phone: "81973336334",
+        phone: null,
+        noCorporatePhone: true,
       },
       {
         name: "Sem usuário",
         emails: ["dp-2@fgservices.com.br"],
-        phone: "81973336334",
+        phone: null,
+        noCorporatePhone: true,
       },
       {
         name: "Elaine",
@@ -190,7 +192,8 @@ const CONTATOS = [
       {
         name: "Sem usuário",
         emails: ["dp-11@fgservices.com.br"],
-        phone: "81973336334",
+        phone: null,
+        noCorporatePhone: true,
       },
       {
         name: "Leonildo",
@@ -240,7 +243,7 @@ const CONTATOS = [
       {
         name: "Sem usuário",
         emails: ["comercial-2@fgservices.com.br"],
-        phone: "81999180195",
+        phone: null,
         noCorporatePhone: true,
       },
     ],
@@ -355,7 +358,7 @@ const CONTATOS = [
       {
         name: "Sem usuário",
         emails: ["supervisao.ba-2@fgservices.com.br"],
-        phone: "Null",
+        phone: null,
         noCorporatePhone: true,
       },
       {
@@ -371,7 +374,7 @@ const CONTATOS = [
       {
         name: "Sem usuário",
         emails: ["supervisao.pe-3@fgservices.com.br"],
-        phone: "Null",
+        phone: null,
         noCorporatePhone: true,
       },
       {
