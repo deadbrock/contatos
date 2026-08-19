@@ -60,12 +60,12 @@ const CONTATOS = [
       {
         name: "André",
         emails: ["faturamento@fgservices.com.br"],
-        phone: "81997567659",
+        phone: "81991233872",
       },
       {
         name: "Suzana",
         emails: ["faturamento-2@fgservices.com.br"],
-        phone: "81997567659",
+        phone: "81991233872",
       },
     ],
   },
@@ -241,6 +241,7 @@ const CONTATOS = [
         name: "Sem usuário",
         emails: ["comercial-2@fgservices.com.br"],
         phone: "81999180195",
+        noCorporatePhone: true,
       },
     ],
   },
@@ -250,12 +251,12 @@ const CONTATOS = [
       {
         name: "Eduardo",
         emails: ["logistica@fgservices.com.br"],
-        phone: "81998127924",
+        phone: "81993221038",
       },
       {
         name: "Eduardo Andrade",
         emails: ["logistica-2@fgservices.com.br"],
-        phone: "81995369580",
+        phone: "81979160083",
       },
     ],
   },
@@ -265,7 +266,7 @@ const CONTATOS = [
       {
         name: "Dra. Patrícia",
         emails: ["juridicofg@fgservices.com.br"],
-        phone: "81998112651",
+        phone: "51999053075",
       },
     ],
   },
@@ -316,7 +317,7 @@ const CONTATOS = [
       {
         name: "Thamiris",
         emails: ["adm.ba@fgservices.com.br"],
-        phone: "81993336285",
+        phone: "81973336285",
       },
       {
         name: "Walker",
@@ -349,11 +350,13 @@ const CONTATOS = [
         name: "Sem usuário",
         emails: ["supervisao.ba-1@fgservices.com.br"],
         phone: null,
+        noCorporatePhone: true,
       },
       {
         name: "Sem usuário",
         emails: ["supervisao.ba-2@fgservices.com.br"],
         phone: "Null",
+        noCorporatePhone: true,
       },
       {
         name: "Marcelo",
@@ -368,7 +371,8 @@ const CONTATOS = [
       {
         name: "Sem usuário",
         emails: ["supervisao.pe-3@fgservices.com.br"],
-        phone: "81984278027",
+        phone: "Null",
+        noCorporatePhone: true,
       },
       {
         name: "Wallace Silva",
@@ -388,12 +392,14 @@ const CONTATOS = [
       {
         name: "Sem usuário",
         emails: ["supervisao.pe-8@fgservices.com.br"],
-        phone: "81995369534",
+        phone: "Null",
+        noCorporatePhone: true,
       },
       {
         name: "Sem uso",
         emails: ["supervisao.pe-9@fgservices.com.br"],
         phone: null,
+        noCorporatePhone: true,
       },
       {
         name: "Paulo andré",
@@ -404,6 +410,7 @@ const CONTATOS = [
         name: "Sem usuário",
         emails: ["supervisao.pe-11@fgservices.com.br"],
         phone: null,
+        noCorporatePhone: true,
       },
       {
         name: "Robertson",
@@ -419,6 +426,7 @@ const CONTATOS = [
         name: "Sem uso",
         emails: ["supervisao.al@fgservices.com.br"],
         phone: null,
+        noCorporatePhone: true,
       },
       {
         name: "Adriana Anjos",
@@ -483,6 +491,7 @@ const CONTATOS = [
         name: "Sem uso",
         emails: ["financeiro-ce@fgservices.com.br"],
         phone: null,
+        noCorporatePhone: true,
       },
     ],
   },
