@@ -392,7 +392,7 @@ const CONTATOS = [
       {
         name: "Sem usuário",
         emails: ["supervisao.pe-8@fgservices.com.br"],
-        phone: Null,
+        phone: null,
         noCorporatePhone: true,
       },
       {
