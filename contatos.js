@@ -22,7 +22,7 @@ const CONTATOS = [
         phone: "81997550222",
       },
       {
-        name: "Sem nome",
+        name: "Sem usuário",
         emails: ["adm-1@fgservices.com.br"],
         phone: null,
         noCorporatePhone: true,
@@ -200,8 +200,8 @@ const CONTATOS = [
       {
         name: "Camille",
         emails: ["dp-13@fgservices.com.br"],
-        phone: "81973336334" 
-      }
+        phone: "81973336334",
+      },
       {
         name: "Desligamento",
         emails: ["demissaofg@fgservices.com.br"],
