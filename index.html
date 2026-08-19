@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contatos corporativos FG Services - Terceirização de Serviços">
+  <title>Contatos FG Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <img
+        src="assets/logo-fg.png"
+        alt="FG Services — Terceirização de Serviços"
+        class="logo-img"
+        width="280"
+        height="80"
+      >
+      
+    </header>
+
+    <div class="search-wrap">
+      <label class="search-label" for="busca">Buscar contato</label>
+      <div class="search-field">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input
+          type="search"
+          id="busca"
+          class="search-input"
+          placeholder="Nome ou departamento..."
+          autocomplete="off"
+          enterkeyhint="search"
+        >
+      </div>
+      <p class="search-result" id="search-result" hidden></p>
+    </div>
+
+    <main class="contacts" id="contatos"></main>
+
+    <footer class="footer">
+      <div class="footer-bar" aria-hidden="true"></div>
+      <div class="footer-content">
+        <div class="footer-item">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <div>
+            <a href="tel:+558140427878">(81) 4042-7878</a>
+            <span class="separator">/</span>
+            <a href="https://wa.me/5581991236035" target="_blank" rel="noopener">(81) 99123-6035</a>
+          </div>
+        </div>
+        <div class="footer-item">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <a href="https://www.fgservices.com.br" target="_blank" rel="noopener">www.fgservices.com.br</a>
+        </div>
+        <div class="footer-item">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          <a href="https://maps.google.com/?q=Rua+Minas+Gerais,+137,+Ana+Albuquerque,+Igarassu+-+PE" target="_blank" rel="noopener">
+            Rua Minas Gerais, 137, Ana Albuquerque, Igarassu - PE
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="contatos.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
