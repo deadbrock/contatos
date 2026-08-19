@@ -309,6 +309,11 @@ const CONTATOS = [
         phone: "81986860119",
       },
       {
+        name: "Allyson",
+        emails: ["coordenacao.pe-2@fgservicess.com.br"],
+        phone: "81983736689",
+      },
+      {
         name: "Thamiris",
         emails: ["adm.ba@fgservices.com.br"],
         phone: "81993336285",
