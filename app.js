@@ -41,7 +41,7 @@ function renderPhoneButtons(person) {
   return "";
 }
 
-const WEBMAIL_BASE_URL = "https://webmail.kinghost.net";
+const WEBMAIL_BASE_URL = "https://webmail.kinghost.net/roundcube";
 
 function buildWebmailComposeUrl(email) {
   const cleanEmail = String(email || "").trim();
