@@ -41,12 +41,79 @@ function renderPhoneButtons(person) {
   return "";
 }
 
+const WEBMAIL_BASE_URL = "https://webmail.kinghost.net";
+
+function buildWebmailComposeUrl(email) {
+  const cleanEmail = String(email || "").trim();
+  const encodedEmail = encodeURIComponent(cleanEmail);
+
+  return `${WEBMAIL_BASE_URL}/?_task=mail&_action=compose&_to=${encodedEmail}`;
+}
+
+async function copyToClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(text);
+    return true;
+  }
+
+  const helper = document.createElement("textarea");
+  helper.value = text;
+  helper.setAttribute("readonly", "");
+  helper.style.position = "fixed";
+  helper.style.left = "-9999px";
+  helper.style.top = "-9999px";
+  document.body.appendChild(helper);
+  helper.select();
+
+  try {
+    const result = document.execCommand("copy");
+    document.body.removeChild(helper);
+    return result;
+  } catch (error) {
+    document.body.removeChild(helper);
+    return false;
+  }
+}
+
+function attachEmailActions() {
+  document.addEventListener("click", async (event) => {
+    const copyButton = event.target.closest(".js-copy-email");
+    if (copyButton) {
+      event.preventDefault();
+      const email = copyButton.dataset.email || "";
+      const copied = await copyToClipboard(email);
+      const originalText = copyButton.textContent;
+
+      copyButton.textContent = copied ? "Copiado" : "Erro";
+      copyButton.classList.toggle("copied", copied);
+
+      window.setTimeout(() => {
+        copyButton.textContent = originalText;
+        copyButton.classList.remove("copied");
+      }, 1200);
+      return;
+    }
+
+    const emailLink = event.target.closest(".js-email-link");
+    if (emailLink) {
+      event.preventDefault();
+      const email = emailLink.dataset.email || "";
+      const webmailUrl = buildWebmailComposeUrl(email);
+      window.open(webmailUrl, "_blank", "noopener,noreferrer");
+    }
+  });
+}
+
 function renderContact(person) {
   const emails = person.emails
     .filter((email) => email && email.trim())
     .map(
-      (email) =>
-        `<a class="btn btn-email" href="mailto:${email}">${email}</a>`
+      (email) => `
+        <div class="email-row">
+          <a class="btn btn-email js-email-link" href="${buildWebmailComposeUrl(email)}" data-email="${escapeHtml(email)}" target="_blank" rel="noopener">${email}</a>
+          <button class="copy-email js-copy-email" type="button" data-email="${escapeHtml(email)}" aria-label="Copiar email ${escapeHtml(email)}">Copiar</button>
+        </div>
+      `
     )
     .join("");
 
@@ -159,6 +226,7 @@ function setupSearch() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  attachEmailActions();
   renderContacts();
   setupSearch();
 });
