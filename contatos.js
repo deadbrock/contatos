@@ -335,12 +335,12 @@ const CONTATOS = [
     people: [
       {
         name: "Vinicius",
-        emails: ["supervisao@fgservices.com.br"],
+        emails: ["coord.pe@fgservices.com.br"],
         phone: "81997550160",
       },
       {
         name: "Carlos Alberto",
-        emails: ["supervisao.pe-6@fgservices.com.br"],
+        emails: ["coord.pe-26@fgservices.com.br"],
         phone: "81991371552",
       },
     ],
@@ -350,10 +350,9 @@ const CONTATOS = [
     department: "Supervisão",
     people: [
       {
-        name: "Sem usuário",
+        name: "Ivo Radames",
         emails: ["supervisao.ba-1@fgservices.com.br"],
-        phone: null,
-        noCorporatePhone: true,
+        phone: "81988468665",
       },
       {
         name: "Sem usuário",
@@ -460,7 +459,7 @@ const CONTATOS = [
     people: [
       {
         name: "Hermeson",
-        emails: ["hermeson.ce@fgservices.com.br"],
+        emails: ["coord.ce@fgservices.com.br"],
         phone: "81973446802",
       },
     ],
@@ -504,7 +503,7 @@ const CONTATOS = [
     people: [
       {
         name: "Onécio",
-        emails: ["supervisao.pa@fgservices.com.br"],
+        emails: ["coord.pa@fgservices.com.br"],
         phone: "81987769499",
       },
     ],
