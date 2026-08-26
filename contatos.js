@@ -340,7 +340,7 @@ const CONTATOS = [
       },
       {
         name: "Carlos Alberto",
-        emails: ["coord.pe-26@fgservices.com.br"],
+        emails: ["coord.pe-2@fgservices.com.br"],
         phone: "81991371552",
       },
     ],
