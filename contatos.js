@@ -451,6 +451,11 @@ const CONTATOS = [
         emails: ["adm.ce@fgservices.com.br"],
         phone: "81973446713",
       },
+      {
+        name: "Adriana",
+        emails: ["adm.pa@fgservices.com.br"],
+        phone: "81996470714",
+      }
     ],
   },
   {
